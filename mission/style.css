@@ -1,0 +1,36 @@
+h2 {
+    color: #006EB6;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+h1 {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+p {
+    font-size: 20px;
+    text-align: left;
+}
+p1 {
+    font-style: italic;
+}
+li {
+    font-size: 20px;
+    text-align: left;
+}
+.content {
+    max-width: 600px;
+    border: 2px solid lightgrey;
+    padding-top: 30px;
+    padding-inline: 160px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    width: 150px;
+}
