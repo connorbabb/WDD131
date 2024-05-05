@@ -9,6 +9,10 @@
 <body>
     <div class="content">
         <header>
+            <select id="theme"> 
+                <option value="light" selected>Light</option>
+                <option value="dark" >Dark</option>
+            </select>
             <h1>MISSION STATEMENT</h1>
             <h2>BRIGHAM YOUNG UNIVERSITY-IDAHO</h2><hr><br>
         </header>
@@ -27,8 +31,10 @@
             <li>Delivering education that is affordable for students and the Church.</li><br><br><br>
         </ol>
         <footer>
-            <img src="byui-logo_blue.webp" alt="BYUI-Logo"><br><br><br><br>
+            <img src="byui-logo_blue.webp" alt="BYUI-Logo" class="logo" id="blue_logo">
+            <img src="byui-logo_white.png" alt="BYUI-Logo" class="logo" id="white_logo"><br><br><br><br><br><br><br><br>
         </footer>
     </div>
+    <script src="mission.js" defer></script>
 </body>
 </html>
