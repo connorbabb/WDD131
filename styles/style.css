@@ -1,3 +1,22 @@
-h1 {
+article {
     color: red;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* class selectors */
+article.blue {
+    color: blue;
+}
+
+/* id selectors */
+#unique {
+    color: green;
 }
