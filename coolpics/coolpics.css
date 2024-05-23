@@ -10,6 +10,11 @@
 }
 body {
     font-family: 'Mooli', Arial, sans-serif;
+    background-color: #EBEBEB;
+}
+
+.hide {
+    display: none;
 }
 
 h1 {
@@ -29,10 +34,11 @@ img {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: 5px solid black;
+    border: 5px solid white;
+    box-shadow: 5px 5px 10px black;
 }
 
-header {
+header, footer {
     background-color: #52489C;
     color: white;
 }
@@ -53,20 +59,12 @@ a {
 
 nav {
     padding: 0.5rem;
-}
-
-ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    padding: 0;
     list-style: none;
-    padding-bottom: 20px;
+    padding: 0;
     text-align: center;
-}
-
-footer {
-    background-color: #52489C;
-    color: white;
 }
 
 .tab {
@@ -75,8 +73,50 @@ footer {
 
 .tablinks {
     font-size: 24px;
+}
+
+button:hover {
+    color: purple;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.viewer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);;
     color: white;
 }
+
+.viewer.hide {
+    display: none;
+}
+
+.close-viewer {
+    font-size: 2rem;
+    cursor: pointer;
+    vertical-align: top;
+    margin: 75px auto;
+}
+
+.viewer img {
+    width: 50%;
+    height: auto;
+    max-height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
 
 @media screen and (min-width: 700px) {
     .gallery 
@@ -87,18 +127,18 @@ footer {
     {
         display: none;
     }
-    ul {
+    nav {
         display: flex;
+        flex-direction: row;
     }
+    /* #menu {
+        display: block;
+    } */
 }
 
 @media screen and (min-width: 1000px) {
     .gallery 
     {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    .tablinks
-    {
-        display: none;
     }
 }

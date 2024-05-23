@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="coolpics.css">
 </head>
 <body>
+    <div class="viewer hide" onclick="hideView()">
+        <button class="close-viewer" onclick="hideView(event)">X</button>
+        <img src="norris-full.jpeg" alt="full_image">
+    </div>
     <header>
         <h1>Cool Pics 📷</h1>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">Menu</button>
+            <button class="tablinks" onclick="toggleMenu()">Menu</button>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <nav id="Menu" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </nav>
     </header>
     <main>
@@ -60,6 +62,6 @@
     <footer>
         &copy;<span id="year"></span> Not a real site 😀
     </footer>
-    <script src="mission.js" defer></script>
+    <script src="coolpics.js" defer></script>
 </body>
 </html>
