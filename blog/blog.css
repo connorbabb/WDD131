@@ -53,9 +53,17 @@ h1, h2 {
 }
 .article .column1 {
     grid-column: 1;
+    text-align: right;
+    padding-right: 20px;
+    margin-right: 10px;
+    border-right: 2px solid var(--Gold);
+    padding-top: 4px;
 }
 .article .column2 {
     grid-column: 2;
+}
+.article-date {
+    font-size: 22px;
 }
 #filter {
     width: 100%;
@@ -64,7 +72,8 @@ h1, h2 {
     margin-right: 100px;
 }
 .book-image {
-    transform: translateX(30px);
+    display: block;
+    margin: auto;
 }
 .skiptocontent a {
     position: absolute;

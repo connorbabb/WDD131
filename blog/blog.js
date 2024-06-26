@@ -20,7 +20,20 @@ const articles = [
       ages: "12-16",
       genre: "Fantasy",
       stars: "⭐⭐⭐⭐"
-  }
+  },
+  {
+    id: 3,
+    title: "Belgariad Book One: Pawn of Prophecy",
+    date: "Feb 12, 2022",
+    description:
+    "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his \"Aunt Pol\" and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+    imgSrc:
+    "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+    imgAlt: "Book cover for Pawn of Prophecy",
+    ages: "12-16",
+    genre: "Fantasy",
+    stars: "⭐⭐⭐⭐⭐"
+    }
 ];
 
 const articlesContainer = document.getElementById('articlesContainer');
@@ -31,15 +44,15 @@ articles.forEach(article => {
 
   articleDiv.innerHTML = `
         <div class="column1">
-            <p><strong>Date:</strong> ${article.date}</p>
-            <p><strong>Ages:</strong> ${article.ages}</p>
-            <p><strong>Genre:</strong> ${article.genre}</p>
-            <p><strong>Rating:</strong> ${article.stars}</p>
+            <p class="article-date"> ${article.date}</p>
+            <p> ${article.ages}</p>
+            <p> ${article.genre}</p>
+            <p> ${article.stars}</p>
         </div>
         <div class="column2">
             <h2>${article.title}</h2>
             <img class="book-image" src="${article.imgSrc}" alt="${article.imgAlt}">
-            <p><strong>Description:</strong> ${article.description}</p>
+            <p> ${article.description}</p>
         </div>
     `;
 
