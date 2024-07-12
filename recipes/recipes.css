@@ -49,22 +49,26 @@ body {
     border-radius: 8px 0px 0px 8px;
 }
 #searchIcon {
-    width: 8%;
+    width: 6%;
     padding: 5px;
     display: inline-block;
     border: 2px solid black;
     border-radius: 0px 8px 8px 0px;
 }
+#searchIcon:hover {
+    background-color: darkgrey;
+}
 
 img {
-	max-width: 100%;
+	max-width: 70%;
+    height: auto;
 }
 
 .social img {
     width: 15%;
 }
 
-#recipe {
+.recipe {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -72,16 +76,19 @@ img {
     margin: 20px;
     padding: 20px;
 }
-#recipeDetails {
+.recipeDetails {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
+
 .tag {
     border: 2px solid black;
     padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin: 5px;
+    display: inline-block; /* Ensure tags are displayed side by side */
 }
+
 .title {
     color: var(--primary-color);
     font-family: var(--secondary-font);
@@ -94,7 +101,6 @@ footer {
     justify-content: center;
 }
 .social {
-    /* grid-row: 1/2; */
     padding-left: 150px;
     margin-top: 30px;
     width: 300px;
@@ -117,14 +123,14 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-    #recipe {
+    .recipe {
         flex-direction: row;
     }
-    #recipeDetails {
+    .recipeDetails {
         padding: 20px;
     }
     img {
-        width: 60%;
+        width: 40%;
     }
     .description {
         display: block;
@@ -139,6 +145,6 @@ footer {
 }
 @media screen and (min-width: 960px) {
     img {
-        width: 50%;
+        width: 40%;
     }
 }
