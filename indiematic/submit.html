@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie-Matic | Submit Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/indiematic_logo.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="toprated.html">Top Rated</a>
+            <a href="submit.html">Submit</a>
+        </nav>
+    </header>
+    <main>
+        <form class="submitForm">
+            <fieldset class="gameInfo">
+                <legend id="legend">Submit a Game</legend>
+                <p>Game Information:</p>
+                <div class="item">
+                    <label for="fname">Game Name<span>*</span></label>
+                    <input id="fname" type="text" name="fname" value="" required />
+                </div>  
+                <div class="item">
+                    <label for="activity">Platform(s)<span>*</span></label>
+                    <select id="plat">
+                        <option selected value="" disabled selected></option>
+                        <option value="1">Xbox</option>
+                        <option value="2">PlayStation</option>
+                        <option value="3">PC</option>
+                        <option value="4">Xbox/PlayStation</option>
+                        <option value="5">Xbox/PlayStation/PC</option>
+                    </select>
+                </div>
+                <div class="btn-block">
+                    <button type="submit" id="submitButton">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+        <div id="phrase01"></div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
